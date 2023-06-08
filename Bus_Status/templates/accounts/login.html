@@ -1,0 +1,40 @@
+<title>{% block title %}Login{% endblock title %}</title>
+
+{% block login_css %}
+
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+{% endblock login_css%}
+
+
+{% block body %}
+        <div class="container">
+            <h2>Login</h2>
+            <form  action=" {% url 'login_user' %} " method="post" >
+                {% csrf_token %}
+                <div class="inputbox">
+                    <input type="text" required="required" name="id_here">
+                    <span>
+                        id_here*
+                    </span>
+                </div>
+            
+                <div class="inputbox">
+                    <input type="password" required="required" name="password1">
+                    <span>
+                        Password: *
+                    </span>
+                </div>
+
+                <i><a href="accounts/signup">Wanted to Signup?</a></i><br><br>
+                   
+                <div class="inputbox">
+                    <input type="submit" value="Login">
+                </div>
+                
+            </form>
+        </div>
+        
+{% endblock body %}  

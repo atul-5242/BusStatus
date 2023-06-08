@@ -1,0 +1,172 @@
+/* *{
+    margin: 0;
+    padding:0;
+
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.wrapper{
+    display: inline-flex
+}
+
+.wrapper .static-txt{
+    color: coral;
+    font-size: 60px;
+    font-weight: 400   ;
+
+}
+.wrapper .dynamic-texts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-texts li{
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6 steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top:-360px;
+    }
+}
+
+.dynamic-texts li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #343f4f; ;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 1.5 steps(10) infinite;
+}
+
+@keyframes typing{
+    100%{
+        left: 100px ;
+        margin: 0-35 0 35px;
+    }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #343F4F;
+} */
+.wrapper{
+  display: flex;
+  justify-content: left;
+    /* left: 45px; */
+    bottom:290px;
+    /* width: 45%; */
+    /* height: 55%; */
+    /* margin-right: 700px; */
+    /* min-height: 100vh; */
+    /* width:50%; */
+    /* height: 25%; */
+    /* right:80; */
+    align-items:center;
+    /* overflow: hidden; */
+    position: relative;
+    /* background-image: url(images/image.jpg); */
+    background-position: left;
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    text-align: left;
+    /* justify-content:left; */
+    /* font-sa */
+   
+}
+.wrapper .static-txt .width-bus{
+    font-weight: 550;
+    /* bottom:-500px; */
+    /* height: */
+}
+.wrapper .static-txt{
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-weight: 400;
+  
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:rgb(255, 255, 255);
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+/* -----------------------------Class Everything------------------------- */
+
+.Everthing{
+    /* display: flex; */
+  /* justify-content: left; */
+    left: 45px;
+    bottom:270px;
+    
+    align-items:center;
+
+    position: relative;
+
+    background-position: left;
+
+    text-align: left;
+    justify-content:left;
+    font-size :40px;;
+
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600 ;
+}

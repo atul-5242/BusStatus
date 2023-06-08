@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block for_enter_infor_css %}
+<link rel="stylesheet" href="/static/Text_writing.css">
+<link rel="stylesheet" href="/static/style_changing_image.css">
+<link rel="stylesheet" href="/static/Output_of_BusStatus_forinputingdata.css">
+
+{% endblock for_enter_infor_css %}
+
+{% block title %}Details{% endblock title %}
+
+{% block body %}
+
+<div class="Output_background ">
+<div class="container ">
+
+  <form  action=" {% url 'info_bus' %} " method="post" >
+    {% csrf_token %}
+  <div class="col-md-6 move ">
+        
+    <select class="form-select " id="validationCustom04" required name="Location">
+      <option selected disabled value="">Location</option>
+      <option>Niyawa</option>
+        <option>Char Khamba</option>
+        <option>Kargi Chowk</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-1 container2_button ">
+      
+    <select class="form-select " id="validationCustom04" required name="Time">
+      <option selected disabled value="">Time</option>
+      <option>After Noon</option>
+        <option>Evening</option>
+        <option>Morning</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+      <span>
+        <input class="right" placeholder="Bus no." type="text" required="required" name="Bus_no"> 
+      </span>
+      <a href=""><button class="btn btn-outline-warning container3_button" type="submit">Submit form</button></a>
+    </form>
+  </div>
+</div>
+
+
+{% endblock body %}

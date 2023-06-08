@@ -1,0 +1,234 @@
+/* .navbar .navbar-expand-lg .bg-dark .navbar-dark{
+    
+} */
+@import url('https//fronts.googleapis.com/css2?family=popipns:wght@300;400;500;600;700;80;900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-family:'popipns',sans-serif;
+
+}
+.Output_background{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(white,black);
+    /* background: linear-gradient(#ffffff,#dfa95c); */
+    
+}
+
+.container
+{
+    position: relative;/*Important*/
+    bottom: -200px;
+    width: 50%;
+    height: 20%;
+    background: rgb(59, 58, 58);
+    border-radius:20px ;  /*Important*/
+    /* box-shadow: 0px 5px 200px ; */
+    box-shadow: 5px 5px 5px #fff;
+    justify-content: right;
+
+margin-left: 700px;
+align-items:center;
+background-position: right;
+justify-content:right;
+    
+
+}
+.left
+{
+    position: relative;
+    margin-left: 55px;
+
+    bottom:-60px;
+    padding: 20px 300px; 
+    /* bottom: -100px; */
+     width: 45%;
+    /* height: 75%;  */
+    background: rgb(255, 255, 255);
+    border-radius:10px ;  /*Important*/
+    box-shadow: 5px 5px 5px rgb(128, 127, 127);
+
+    /* margin-left: 700px; */
+}
+.container2_button{
+    position: relative;
+    margin-left: 730px;
+    bottom:-15px;
+    
+    /* padding: 50px 90px; /*Important*/
+    background: rgb(255, 255, 255);
+    border-radius:10px ;  /*Important*/
+    /* box-shadow: 0px 5px 200px ; */
+    box-shadow: 5px 5px 5px rgb(128, 127, 127); 
+
+}
+.right{
+    position: relative;
+    margin-left: 870px;
+    bottom:15px;
+    width: 8%;
+    height: 30px;
+    padding:1px 20px ; 
+    border-radius: 5px;
+}
+.container3_button{
+    position: relative;
+    margin-left: 1010px;
+    bottom:50px;
+    width: 15%;
+    padding:20px 70px ; 
+    background: rgb(255, 255, 255);
+    border-radius:10px ; 
+    box-shadow: 5px 5px 5px rgb(128, 127, 127);
+
+}
+.container1
+{
+    margin-left: 55px;
+    position: relative;/*Important*/
+    bottom: -170px;
+    padding: 20px 300px; 
+    /* width:400px; */
+    /* max-width: 100px; */
+   
+    background: rgb(255, 255, 255);
+    border-radius:10px ;  /*Important*/
+    box-shadow: 5px 5px 5px rgb(128, 127, 127);
+
+    
+    
+}
+.container2
+{
+    position: relative;/*Important*/
+    margin-left: 815px;
+    bottom: -148px;
+    padding: 20px 40px; /*Important*/
+    background: rgb(255, 255, 255);
+    border-radius:10px ;  /*Important*/
+    /* box-shadow: 0px 5px 200px ; */
+    box-shadow: 5px 5px 5px rgb(128, 127, 127);
+
+}
+.container3
+{
+    position: relative;/*Important*/
+    margin-left: 1010px;
+    bottom: -120px;
+    padding:20px 70px ; 
+    background: rgb(255, 255, 255);
+    border-radius:10px ;  /*Important*/
+    /* box-shadow: 0px 5px 200px ; */
+    box-shadow: 5px 5px 5px rgb(128, 127, 127);
+
+}
+
+
+
+.container h2{
+    color: rgb(248, 246, 246);
+    margin-bottom: 45px;/*Barhar ke liye sepertion*/
+    line-height: 1cm;
+    font-weight:500;
+    padding-left: 10px;/*Important anadr ke liye seperation*/  
+    border-left:5px solid #e91e63 ;
+
+}
+
+/* ----------------------------------------------------------------------------- */
+.Text{
+    color: #e91e63;
+}
+
+.container .inputbox{
+    position: relative;
+    width: 350px;
+    height: 46 px;
+    margin-bottom:15px;
+}
+
+.container .inputbox:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================================Text===================================== */
+.text_main{
+    position: relative;
+    margin-left: 500px;
+    bottom: -250px;
+    color: #fff;
+}
+/* ------------------------------------------------------- */
+.container .inputbox input
+{
+    position: absolute;
+    /* top: 0;
+    bottom: 0;
+    left:0; */
+    width: 250px;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+}
+/* ---------------------------- */
+.container .inputbox span{
+    position:relative;
+    /* top: 10px;
+    bottom: 10px; */
+    
+    padding: 20px;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events:none;
+
+} 
+
+.container .inputbox input:focus ~span,
+/* .container .inputbox input:before~span, */
+.container .inputbox input:valid ~span{
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px;
+}
+
+.container .inputbox input[type="submit"]{
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    cursor: pointer;
+    font-weight: 500;
+    /* display:flex; */
+    /* justify-content: center; */
+    left: 20;
+    align-items:center;
+}
+.container .inputbox input[type="submit"]:hover{
+    background: #e91e63;
+}  
+
+/* home page :============================== */
+
+.move{
+    /* box-shadow:5px,5px,5px #e91e63; */
+    /* color: #e91e63x; */
+    position: relative;
+    margin-left: 40px;
+    bottom: -50px;
+    background: rgb(255, 255, 255);
+    border-radius:10px ;  /*Important*/
+    /* box-shadow: 0px 5px 200px ; */
+    box-shadow: 5px 5px 5px rgb(128, 127, 127); 
+    /* width: 20%; */
+}

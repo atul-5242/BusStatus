@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block for_home_css %}
+<link rel="stylesheet" href="static/Text_writing2.css">
+<link rel="stylesheet" href="static/style_changing_image2.css">
+<link rel="stylesheet" href="static/Output_of_BusStatus2.css">
+{% endblock for_home_css %}
+
+{% block title %}Home page{% endblock title %}
+
+{% block body %}
+
+
+<!----------------------------ImageChanging Page---------------------->
+
+    <div class="Section_top ">
+    </div>
+<br>
+<!-- ----------------------------  Text Writing.---------------------------------------->
+
+<span class="wrapper">
+<div class="static-txt">
+<span class="width-bus">Bus</span>
+</div>
+<ul class="dynamic-txts">
+  <li><span>Status</span></li>
+  <li><span>Location</span></li>
+  <li><span>Time</span></li>
+</ul>
+</span>
+<div class="Everthing">
+Everthing You Can <br>Search Here...
+
+</div>
+
+<div class="Output_background ">
+<div class="container  ">
+  {% for data1 in data %}
+ <span class="Bus_status_out container1"name="Location">{{data1.Location}}</span>
+  <span class="Bus_status_out container2" name="Time">{{data1.Time}}</span>    
+  <span class="Bus_status_out container3" name="Bus_no">{{data1.Bus_no}}</span>   <br>  
+{% endfor %}
+  
+
+    </div>
+  </div>
+{% endblock body %}
+
+
+
+
+
+
+
+
+

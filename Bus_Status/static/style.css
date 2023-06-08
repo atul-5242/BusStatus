@@ -1,0 +1,111 @@
+@import url('https//fronts.googleapis.com/css2?family=popipns:wght@300;400;500;600;700;80;900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-family:'popipns',sans-serif;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    /* background: linear-gradient(45deg,#26fef3,#da225c); */
+    /* background: linear-gradient(45deg,#a407d9,#e9ce03,rgb(205, 178, 182)); */
+    /* background: linear-gradient(45deg,#5134b3,#e96a03,rgba(248, 17, 17, 0.133),#7a10e5); */
+   
+    background: linear-gradient(45deg,#fead06,#c00def);
+    
+}
+
+.container
+{
+    position: relative;/*Important*/
+    padding: 70px 40px; /*Important*/
+    background: rgb(255, 255, 255);
+    border-radius:20px ;  /*Important*/
+    box-shadow: 0px 5px 200px ;
+    
+
+}
+
+.container h2{
+    color: #111;
+    margin-bottom: 45px;/*Barhar ke liye sepertion*/
+    line-height: 1cm;
+    font-weight:500;
+    padding-left: 10px;/*Important anadr ke liye seperation*/  
+    border-left:5px solid #e91e63 ;
+
+}
+
+.container .inputbox{
+    position: relative;
+    width: 350px;
+    height: 46 px;
+    margin-bottom:15px;
+}
+
+.container .inputbox:last-child {
+    margin-bottom: 0;
+}
+/* ------------------------------------------------------- */
+.container .inputbox input
+{
+    position: absolute;
+    /* top: 0;
+    bottom: 0;
+    left:0; */
+    width: 250px;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+}
+/* ---------------------------- */
+.container .inputbox span{
+    position:relative;
+    /* top: 10px;
+    bottom: 10px; */
+    
+    padding: 20px;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events:none;
+
+} 
+
+.container .inputbox input:focus ~span,
+/* .container .inputbox input:before~span, */
+.container .inputbox input:valid ~span{
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px;
+}
+
+.container .inputbox input[type="submit"]{
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    cursor: pointer;
+    font-weight: 500;
+    /* display:flex; */
+    /* justify-content: center; */
+    left: 20;
+    align-items:center;
+}
+.container .inputbox input[type="submit"]:hover{
+    background: #e91e63;
+}  
+
+/* home page :============================== */
+

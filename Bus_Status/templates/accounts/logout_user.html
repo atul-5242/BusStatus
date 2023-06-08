@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block logout_css %}
+<link rel="stylesheet" href="static/Text_writing.css">
+<link rel="stylesheet" href="static/style_changing_image.css">
+<link rel="stylesheet" href="static/Output_of_BusStatus.css">
+{% endblock logout_css %}
+
+{% block title %}Logout{% endblock title %}
+
+{% block body %}
+
+
+<!----------------------------ImageChanging Page---------------------->
+
+    <div class="Section_top ">
+    </div>
+<br>
+<!-- ----------------------------  Text Writing.---------------------------------------->
+
+<span class="wrapper">
+<div class="static-txt">
+<span class="width-bus">Bus</span>
+</div>
+<ul class="dynamic-txts">
+  <li><span>Status</span></li>
+  <li><span>Location</span></li>
+  <li><span>Time</span></li>
+</ul>
+</span>
+<div class="Everthing">
+Everthing You Can <br>Search Here...
+
+</div>
+
+<div class="Output_background ">
+<div class="container ">
+ <span class="Bus_status_out container1"name="Location">Location</span>
+  <span class="Bus_status_out container2" name="Time">Time</span>    
+  <span class="Bus_status_out container3" name="Bus_no">Bus_number</span>   
+
+  <form  action=" {% url 'search' %} " method="post" >
+    {% csrf_token %}
+  <div class="col-md-6 move ">
+      
+    <select class="form-select " id="Location" required name="Location">
+      <option selected disabled value="">Location</option>
+      <option>Niyawa</option>
+        <option>Char Khamba</option>
+        <option>Kargi Chowk</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-1 container2_button ">
+      
+    <select class="form-select " id="Time" required name="Time">
+      <option selected disabled value="">Time</option>
+      <option>After Noon</option>
+        <option>Evening</option>
+        <option>Morning</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  
+      
+      <button class="btn btn-outline-warning container3_button" type="submit" id ="search"name="search">Search
+
+      </button>
+
+    </form>  
+
+    {% if user.is_authenticated %}
+
+
+      <span class="text_main">
+        <h2>For You FruitFull Contribution. <a href="/information" class="Text">Click Here...</a></h2>
+  </span>
+
+
+  {% endif %}
+    </div>
+  </div>
+{% endblock body %}
+
+
+
+
+
+
+
+
+
